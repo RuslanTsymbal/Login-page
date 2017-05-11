@@ -1,0 +1,50 @@
+/*import*/
+@import "../../node_modules/bootstrap-less/bootstrap/bootstrap.less";
+@import(less)"../../node_modules/normalize.css/normalize.css";
+@import "./variables.less";
+/*font*/
+@import (less)"../font/segoe_ui/stylesheet.css";
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: "Segoe UI";
+}
+
+#container {
+  height: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: @color-background;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container-fluid {
+  max-width: 900px;
+  margin: 0 auto;
+  height: 100%;
+  background-color: @color-white;
+  border-radius: 14px;
+  padding-left: 0;
+  padding-right: 0
+}
+
+//footer
+#footer {
+  padding: 6px 0 6px 0;
+  text-align: center;
+}
+
+/*import file less*/
+@import "./header.less";
+@import "./pages.less";
+@import "media.less";
+
+
+
+

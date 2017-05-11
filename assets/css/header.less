@@ -1,0 +1,63 @@
+#header {
+  overflow: hidden;
+  border-bottom: 2px solid @color-background;
+  padding-bottom: 24px;
+
+  button {
+    background-color: @color-background;
+    display: block;
+    color: @color-white;
+    font-weight: @font-weight-500;
+  }
+  button:hover {
+    background-color: @color-white;
+    color: @color-background;
+    transition: 0.5s;
+    border: 1px solid @color-background;
+  }
+  form {
+    overflow: hidden;
+    padding-top: 24px;
+    padding-left: 15px;
+    input {
+      float: left;
+      height: 33.6px;
+      margin-right: 10px;
+      padding-left: 3px;
+    }
+    button {
+      width: 74px;
+      float: right;
+      font-weight: @font-weight-500;
+    }
+    .row {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .header_buttons {
+    padding-top: 24px;
+    button {
+      display: inline-block;
+    }
+  }
+  .header_right {
+    padding-top: 24px;
+    span {
+      display: block;
+      float: left;
+      padding-top: 7px;
+      font-weight: @font-weight-500;
+      margin-right: 5px;
+    }
+    span:nth-child(2) {
+      text-transform: uppercase;
+    }
+    button {
+      float: right;
+      width: 74px;
+      font-weight: @font-weight-500;
+    }
+  }
+}
+

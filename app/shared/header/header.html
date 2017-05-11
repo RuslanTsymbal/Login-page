@@ -1,0 +1,15 @@
+<div class="header_buttons col-md-6">
+    <button ng-click="changeLanguage('en', 'ru')" translate="BUTTON_LANG" type="submit" class="btn"></button>
+</div>
+<form ng-if="showForm" ng-if="showForm" method="#" class="form-inline col-md-6">
+    <input ng-model="loginUser" type="text" class="input-small" placeholder="Name" autofocus>
+    <input ng-model="passwordUser" type="password" class="input-small" placeholder="Password">
+    <button translate="SIGN_IN" ng-disabled="!loginUser || !passwordUser" ng-click="getData(loginUser, passwordUser)"
+            type="submit" class="btn"></button>
+</form>
+<div class="header_right col-md-6" ng-if="showButtons">
+    <span translate="NAME_USER"></span>
+    <span>{{nameUser}}</span>
+    <button translate="LOGO_UT" ng-click="exit()" type="submit" class="btn"></button>
+</div>
+
